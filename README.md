@@ -12,7 +12,7 @@ rng(30, 14, { float: true, decimal: 2, skip: [16, 17, 25, 29] });
 $ npm i rand-num-gen
 ```
 
-## 
+##
 The export is `{ rng }`. Here's how to use it:
 
 ```
@@ -41,7 +41,7 @@ A random integer or float.
 
 Skipped integers which will never be returned.
 
-Integers passed with `{ skip: value1[, value2[, ....[, valueN]]] }` when `{ float: true }` will cause floats starting with the skipped integers to never be returned as well.
+Integers passed with `{ skip: value1[, value2[, ....[, valueN]]] }` when `{ float: true }` will also cause floats starting with the skipped integers to never be returned.
 
 An integer will be returned when `decimal: 0`.
 
