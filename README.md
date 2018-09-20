@@ -42,7 +42,7 @@ A random integer or float.
 
 Skipped integers which will never be returned.
 
-Integers passed with `{ skip: value1[, value2[, ....[, valueN]]] }` when `{ float: true }` will cause returned floats starting with the skipped integers to be skipped as well.
+Integers passed with `{ skip: value1[, value2[, ....[, valueN]]] }` when `{ float: true }` will cause floats starting with the skipped integers to never be returned as well.
 
 An integer will be returned when `decimal: 0`.
 
