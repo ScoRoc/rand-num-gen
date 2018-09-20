@@ -1,6 +1,6 @@
 {
   "name": "rand-num-gen",
-  "version": "1.0.10",
+  "version": "1.0.11",
   "description": "random number generator with various options",
   "main": "index.js",
   "scripts": {
