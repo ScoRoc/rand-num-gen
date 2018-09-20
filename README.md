@@ -58,6 +58,6 @@ rng(7, 2, { float: true });                             // Returns a float betwe
 rng(7, 2, { float: true, decimal: 2 });                 // Returns a float with two decimal places between 2, inclusive, and 7, exclusive.
 rng(7, 2, { float: true, decimal: 2, skip: [3, 4] })    // Returns a float with two decimal places between 2, inclusive, and 7, exclusive. Will never return a float between 3.0 and 4.99999999999999 .
 rng(7, 2, { skip: [3, 4] })                             // Returns an integer between 2 and 7. Will never return 3 or 4.
-
+```
 
 ________________________________________________________________________
