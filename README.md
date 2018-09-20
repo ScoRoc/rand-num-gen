@@ -43,7 +43,7 @@ Skipped integers which will never be returned.
 
 Integers passed with `{ skip: value1[, value2[, ....[, valueN]]] }` when `{ float: true }` will also cause floats starting with the skipped integers to never be returned.
 
-An integer will be returned when `decimal: 0`.
+An integer will be returned when `{ decimal: 0 }`.
 
 ## Examples
 
