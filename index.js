@@ -14,7 +14,7 @@ var randomNum = (max, min = 0, options) => {
     if (!userObj.float) {
       return Math.floor( Math.random() * (max - min + 1) + min );
     } else {
-      return parseFloat( (Math.random() * (max - min) + min).toFixed(userObj.decimal) );
+      return parseFloat( (Math.random() * (max - min + 1) + min).toFixed(userObj.decimal) );
     }
   } else {
     var num = 0;
@@ -22,7 +22,7 @@ var randomNum = (max, min = 0, options) => {
       num = Math.floor( Math.random() * (max - min + 1) + min );
       return userObj.skip.includes(num) ? randomNum(max, min, userObj) : num;
     } else {
-      num = parseFloat( (Math.random() * (max - min) + min).toFixed(userObj.decimal) );
+      num = parseFloat( (Math.random() * (max - min + 1) + min).toFixed(userObj.decimal) );
       return userObj.skip.includes( Math.floor( parseInt(num).toFixed(0) ) ) ? randomNum(max, min, userObj) : num;
     }
   }
