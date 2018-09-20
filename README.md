@@ -19,7 +19,7 @@ The export is `{ rng }`. Here's how to use it:
 ```
 import { rng } from 'rand-num-gen';
 
-console.log( rng(10, 1, { skip: [7, 8, 9] }) );      // Returns an integer
+console.log( rng(10, 1, { skip: [7, 8, 9] }) );      // Logs an integer to the console.
 ```
 
 **Syntax and Options**
@@ -28,13 +28,13 @@ console.log( rng(10, 1, { skip: [7, 8, 9] }) );      // Returns an integer
 rng(max[, min[, options]])
 ```
 
-| Option  | Syntax                                                      | Description/parameters |
-| ------- | ----------------------------------------------------------- | ----------- |
-| max     | `rng(max)`                                                  | An integer. The highest positive number returned from `rng(max)`. |
-| min     | `rng(max, min)`                                             | An integer. The lowest positive or negative number returned from `rng(max, min)`. |
-| float   | `rng(max, min, { float: bool })`                            | A boolean. Determines whether the returned value will be a float or an integer. |
-| decimal | `rng(max, min, { decimal: n })`                             | An integer between 0 and 14. Determines how many places which will be displayed by the float. |
-| skip    | `rng(max, min, { skip: value1[, value2[,...[, valueN]]] })` | An array of integers. Integers which will not be returned. |
+| Parameter  | Syntax                                                      | Description/parameters |
+| ---------- | ----------------------------------------------------------- | ----------- |
+| max        | `rng(max)`                                                  | Required. An integer. The highest positive number returned from `rng(max)`. |
+| min        | `rng(max, min)`                                             | An integer. The lowest positive or negative number returned from `rng(max, min)`. |
+| float      | `rng(max, min, { float: bool })`                            | A boolean. Determines whether the returned value will be a float or an integer. |
+| decimal    | `rng(max, min, { decimal: n })`                             | An integer between 0 and 14. Determines how many places which will be displayed by the float. |
+| skip       | `rng(max, min, { skip: value1[, value2[,...[, valueN]]] })` | An array of integers. Integers which will not be returned. |
 
 **Return value**
 
