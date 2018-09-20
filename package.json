@@ -1,0 +1,19 @@
+{
+  "name": "rand-num-gen",
+  "version": "1.0.1",
+  "description": "random number generator with various options",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ScoRoc/rand-num-gen.git"
+  },
+  "author": "Scott Rosehart <scrosehart@gmail.com> (http://www.scottrosehart.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ScoRoc/rand-num-gen/issues"
+  },
+  "homepage": "https://github.com/ScoRoc/rand-num-gen#readme"
+}
