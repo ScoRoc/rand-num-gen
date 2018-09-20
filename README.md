@@ -38,7 +38,7 @@ rng(max[, min[, options]])
 
 **Return value**
 
-A random integer or float with length(optional) from a minimum{optional) integer to a maximum(required) integer.
+A random integer or float.
 
 Skipped integers which will never be returned.
 
@@ -52,10 +52,10 @@ An integer will be returned when `decimal: 0`.
 Defaults:
 rng(max, min = 0, { float: false, decimal: 14, skip: false })
 
-rng(7);                                            // Returns an integer between 0 and 7, both inclusive.
-rng(7, 2);                                         // Returns an integer between 2 and 7, both inclusive.
-rng(7, 2, { float: true });                 // Returns a float between 2, inclusive, and 7, exclusive.
-rng(7, 2, { float: true, decimal: 2 });     // Returns a float with two decimal places between 2, inclusive, and 7, exclusive.
+rng(7);                                                 // Returns an integer between 0 and 7, both inclusive.
+rng(7, 2);                                              // Returns an integer between 2 and 7, both inclusive.
+rng(7, 2, { float: true });                             // Returns a float between 2, inclusive, and 7, exclusive.
+rng(7, 2, { float: true, decimal: 2 });                 // Returns a float with two decimal places between 2, inclusive, and 7, exclusive.
 rng(7, 2, { float: true, decimal: 2, skip: [3, 4] })    // Returns a float with two decimal places between 2, inclusive, and 7, exclusive. Will never return a float between 3.0 and 4.99999999999999 .
 rng(7, 2, { skip: [3, 4] })                             // Returns an integer between 2 and 7. Will never return 3 or 4.
 
