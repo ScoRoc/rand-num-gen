@@ -6,13 +6,13 @@ A simple module for generating random numbers.
 rng(30, 14, { float: true, decimal: 2, skip: [16, 17, 25, 29] });
 ```
 
-**Installing**
+##Installing
 
 ```
 $ npm i rand-num-gen
 ```
 
-**Exports**
+##Exports
 
 The export is `{ rng }`. Here's how to use it:
 
@@ -22,7 +22,7 @@ import { rng } from 'rand-num-gen';
 console.log( rng(10, 1, { skip: [7, 8, 9] }) );      // Logs an integer to the console.
 ```
 
-**Syntax and Options**
+##Syntax and Options
 
 ```
 rng(max[, min[, options]])
@@ -36,7 +36,7 @@ rng(max[, min[, options]])
 | decimal    | `rng(max, min, { decimal: n })`                             | An integer between 0 and 14. Determines how many places which will be displayed by the float. |
 | skip       | `rng(max, min, { skip: value1[, value2[,...[, valueN]]] })` | An array of integers. Integers which will not be returned. |
 
-**Return value**
+##Return value
 
 A random integer or float.
 
@@ -46,7 +46,7 @@ Integers passed with `{ skip: value1[, value2[, ....[, valueN]]] }` when `{ floa
 
 An integer will be returned when `decimal: 0`.
 
-**Examples**
+##Examples
 
 ```
 Defaults:
@@ -59,5 +59,9 @@ rng(7, 2, { float: true, decimal: 2 });                 // Returns a float with 
 rng(7, 2, { float: true, decimal: 2, skip: [3, 4] })    // Returns a float with two decimal places between 2 and 7.99, both inclusive. Will never return a float between 3.00 and 4.99999999999999.
 rng(7, 2, { skip: [3, 4] })                             // Returns an integer between 2 and 7. Will never return 3 or 4.
 ```
+
+##License
+
+MIT
 
 ________________________________________________________________________
