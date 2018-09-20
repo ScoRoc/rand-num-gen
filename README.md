@@ -28,14 +28,13 @@ before you use the rng() function.
 rng(max[, min[, options]])
 ```
 
-| Option  | Syntax                                                    | Description/parameters |
-| ------- |:---------------------------------------------------------:| -----------:|
-| max     | rng(max)                                                  | An integer. The highest number which rng() will return. |
-| min     | rng(max, min)                                             | An integer. The lowest number which rng() will return. |
-| float   | rng(max, min, { float: false })                           | A boolean. The number returned will only be an integer. |
-|           rng(max, min, { float: true })                            | A boolean. The number returned will be a float. |
-| decimal | rng(max, min, { decimal: n })                             | An integer between 0 and 14. Determines how many places which will be displayed by the float. |
-| skip    | rng(max, min, { skip: value1[, value2[,...[, valueN]]] }) | An array of integers. Integers which will not be returned. |
+| Option  | Syntax                                                      | Description/parameters |
+| ------- | ----------------------------------------------------------- | ----------- |
+| max     | `rng(max)`                                                  | An integer. The highest positive number returned from `rng(max)`. |
+| min     | `rng(max, min)`                                             | An integer. The lowest positive or negative number returned from `rng(max, min)`. |
+| float   | `rng(max, min, { float: bool })`                            | A boolean. Determines whether the returned value will be a float or an integer. |
+| decimal | `rng(max, min, { decimal: n })`                             | An integer between 0 and 14. Determines how many places which will be displayed by the float. |
+| skip    | `rng(max, min, { skip: value1[, value2[,...[, valueN]]] })` | An array of integers. Integers which will not be returned. |
 
 **Return value**
 
