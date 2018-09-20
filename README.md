@@ -3,7 +3,7 @@
 A simple module for generating random numbers.
 
 ```
-rng(30, 14, {float: true, decimal: 2, skip: [16, 17, 25, 29]});
+rng(30, 14, { float: true, decimal: 2, skip: [16, 17, 25, 29] });
 ```
 
 **Installing**
@@ -14,13 +14,13 @@ $ npm i rand-num-gen
 
 **Exports**
 
-The export is exports.rng so you should:
+The export is `{ rng }`. Here's how to use it:
 
 ```
 import { rng } from 'rand-num-gen';
-```
 
-before you use the rng() function.
+console.log( rng(10, 1, { skip: [7, 8, 9] }) );      // Returns an integer
+```
 
 **Syntax and Options**
 
