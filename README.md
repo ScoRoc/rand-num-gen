@@ -33,15 +33,15 @@ rng(max[, min[, options]])
 | min        | `rng(max, min)`                                             | An integer. The lowest positive or negative number returned from `rng(max, min)`. |
 | float      | `rng(max, min, { float: bool })`                            | A boolean. Determines whether the returned value will be a float or an integer. |
 | decimal    | `rng(max, min, { decimal: n })`                             | An integer between 0 and 14. Determines how many places which will be displayed by the float. |
-| skip       | `rng(max, min, { skip: value1[, value2[,...[, valueN]]] })` | An array of integers. Integers which will not be returned. |
+| skip       | `rng(max, min, { skip: [integers] })` | An array of integers. Integers which will not be returned. |
 
 ## Return value
 
 A random integer or float.
 
-Skipped integers which will never be returned.
+Skipped integers will never be returned.
 
-Integers passed with `{ skip: value1[, value2[, ....[, valueN]]] }` when `{ float: true }` will also cause floats starting with the skipped integers to never be returned.
+Integers passed with `{ skip: [integers] }` when `{ float: true }` will also cause floats starting with the skipped integers to never be returned.
 
 An integer will be returned when `{ decimal: 0 }`.
 
